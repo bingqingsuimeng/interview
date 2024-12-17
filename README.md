@@ -1090,6 +1090,9 @@ unique_ptr 是 C++11 才开始提供的类型，是一种在异常时可以帮�
 
 * auto_ptr 可以赋值拷贝，复制拷贝后所有权转移；unqiue_ptr 无拷贝赋值语义，但实现了`move` 语义；
 * auto_ptr 对象不能管理数组（析构调用 `delete`），unique_ptr 可以管理数组（析构调用 `delete[]` ）；
+  
+##### 智能指针是否是线程安全的：
+  https://www.zhihu.com/question/56836057/answer/2158966805
 
 ### 强制类型转换运算符
 
